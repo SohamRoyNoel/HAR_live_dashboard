@@ -1,7 +1,6 @@
 package HarController.HarDashboardProject.HarFilesRelocator;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
@@ -51,8 +50,8 @@ public class HarRelocator {
 
 			for (int i = 0; i < filesInsideDirectory.length; i++) {
 				String mapperkeyGeneration = prepareKey+"_"+(i+1);
-				//prepareFolderFileMaqpper(mapperkeyGeneration, filesInsideDirectory[i].getAbsolutePath().toString());
-				listElementsToPropertiesFile(mapperkeyGeneration, filesInsideDirectory[i].getAbsolutePath().toString());
+				prepareFolderFileMaqpper(mapperkeyGeneration, filesInsideDirectory[i].getAbsolutePath().toString());
+				listElementsToPropertiesFile(mapperkeyGeneration, filesInsideDirectory[i].getAbsolutePath().toString().replace("\\", "/"));
 			}		
 
 		}

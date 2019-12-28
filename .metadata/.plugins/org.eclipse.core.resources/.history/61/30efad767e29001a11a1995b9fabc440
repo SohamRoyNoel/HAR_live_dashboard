@@ -1,0 +1,15 @@
+package HarController.HarDashboardProject.HarValuesExtractor;
+
+import de.sstoehr.harreader.HarReader;
+
+public class GetValuesFromHar {
+
+	public static void getValueFromHar() {
+		
+		HarReader harReader = new HarReader();
+		Har har = harReader.readFromFile(new File("myhar.har"));
+		System.out.println(har.getLog().getCreator().getName());
+		
+	}
+	
+}

@@ -1,0 +1,25 @@
+package HarController.HarDashboardProject.HarValuesExtractor;
+
+import java.io.File;
+
+import de.sstoehr.harreader.HarReader;
+import de.sstoehr.harreader.HarReaderException;
+import de.sstoehr.harreader.model.Har;
+
+public class GetValuesFromHar {
+
+	public static void getValueFromHar() {
+		
+		HarReader harReader = new HarReader();
+		Har har;
+		try {
+			har = harReader.readFromFile(new File("E:\\HAR_Project\\HarOperationExecution\\Source\\g\\TXT_2019_12_27_HarExecutor_harResourecePath.har"));
+			System.out.println(har.getLog().getCreator().getName());
+		} catch (HarReaderException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+}
