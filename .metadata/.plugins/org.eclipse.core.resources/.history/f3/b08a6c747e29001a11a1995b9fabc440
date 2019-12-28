@@ -1,9 +1,0 @@
-package HarController.HarDashboardProject.HarValuesExtractor;
-
-public class GetValuesFromHar {
-
-	public static void getValueFromHar() {
-		
-	}
-	
-}

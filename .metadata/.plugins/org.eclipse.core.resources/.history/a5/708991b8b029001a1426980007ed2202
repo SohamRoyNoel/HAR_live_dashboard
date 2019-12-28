@@ -1,0 +1,21 @@
+package HarController.HarDashboardProject;
+
+import HarController.HarDashboardProject.HarFilesRelocator.HarRelocator;
+
+/**
+ * Har Dashboard entry point
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	// Lists the files into PROPERTIES file
+        HarRelocator.getFolderNames();
+        // Moves the file
+        HarRelocator.HarRelocators();
+    	//GetValuesFromHar.getValueFromHar();
+    }
+    
+    
+}

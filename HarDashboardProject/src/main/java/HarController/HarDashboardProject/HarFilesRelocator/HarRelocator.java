@@ -22,6 +22,7 @@ public class HarRelocator {
 	public static Properties properties = new Properties();
 	public static File filefolderMapper = new File(ResourcePaths.folder_file_mapperFilelocation);
 
+	// Relocates from source to target
 	public static void HarRelocators() {
 
 		String srcDir = ResourcePaths.srcDir;
@@ -37,6 +38,7 @@ public class HarRelocator {
 		}
 	}
 
+	// lists the folder names into properties file
 	public static void getFolderNames() {
 
 		File[] directoryNames = getListOfDirectories(ResourcePaths.srcDir);

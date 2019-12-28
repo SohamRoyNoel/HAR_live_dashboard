@@ -1,0 +1,11 @@
+package HarController.HarDashboardProject.HarFilesRelocator;
+
+import java.util.Map;
+
+public class CaseCounter {
+
+	public static Map<String, Integer> name() {
+		
+	}
+	
+}

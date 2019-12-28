@@ -1,0 +1,21 @@
+package HarController.HarDashboardProject.HarFilesRelocator;
+
+import java.io.FileInputStream;
+import java.util.Map;
+import java.util.Properties;
+
+public class CaseCounter {
+
+	public static Map<String, Integer> getFolderFilesCount() {
+
+	}
+
+	// Read The property file
+	public static String properties(String key) throws Exception {
+		FileInputStream file = new FileInputStream(fl);
+		Properties rpop = new Properties();
+		rpop.load(file);
+		String data = rpop.getProperty(key);
+		return data;
+	}
+}

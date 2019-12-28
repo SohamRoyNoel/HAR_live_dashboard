@@ -3,12 +3,25 @@
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="HarController.HarDashboardProject.HarFilesRelocator.HarRelocator"/>
 <fullyQualifiedTypeName name="java.io.FilenameFilter"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="HarController.HarDashboardProject.Resources.ResourcePaths"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="de.sstoehr.harreader.HarReader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="de.sstoehr.harreader.model.Har"/>
+<fullyQualifiedTypeName name="HarController.HarDashboardProject.HarValuesExtractor.GetValuesFromHar"/>
+<fullyQualifiedTypeName name="de.sstoehr.harreader.model.HarPage"/>
+<fullyQualifiedTypeName name="de.sstoehr.harreader.model.HarLog"/>
+<fullyQualifiedTypeName name="de.sstoehr.harreader.model.HarEntry"/>
+<fullyQualifiedTypeName name="edu.umass.cs.benchlab.har.tools.HarFileReader"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="edu.umass.cs.benchlab.har.HarLog"/>
+<fullyQualifiedTypeName name="edu.umass.cs.benchlab.har.HarEntries"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.umass.cs.benchlab.har.HarHeaders"/>
+<fullyQualifiedTypeName name="edu.umass.cs.benchlab.har.HarHeader"/>
 </qualifiedTypeNameHistroy>
