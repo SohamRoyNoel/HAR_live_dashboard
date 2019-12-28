@@ -1,0 +1,64 @@
+package HarController.HarDashboardProject.HarFilesRelocator;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+import HarController.HarDashboardProject.Resources.ResourcePaths;
+
+/*
+ * Get all file names in a property file using [foldername=filepath] format
+ * 
+ * */
+
+public class HarRelocator {
+
+	public static void HarRelocators() {
+		
+		String srcDir = ResourcePaths.srcDir;
+		String destDir = ResourcePaths.destDir;
+		File srcFile = new File(srcDir);
+		File destFile = new File(destDir);
+		
+		// Relocation of Har files
+		try {
+			FileUtils.copyDirectoryToDirectory(srcFile, destFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void getFolderNames() {
+	
+		File[] directoryNames = getListOfDirectories(ResourcePaths.srcDir);
+		File[] filesInsideDirectory;
+		
+		for (File file : directoryNames) {
+			// Get the folder names
+			String prepareKey = file.getName();
+			// Get the files inside the folder
+			System.out.println(prepareKey);
+			filesInsideDirectory = getListOfFiles(ResourcePaths.srcDir+"\\"+prepareKey);
+			for (File file2 : filesInsideDirectory) {
+				System.out.println(file2);
+			}
+		}
+	}
+	
+	// Returns the list of DIRECTORIES
+	public static File[] getListOfDirectories(String ResourcePath) {
+		File[] directoryNames = new File(ResourcePath).listFiles(File::isDirectory);
+		return directoryNames;
+	}
+	
+	// Returns the list of Files
+	public static File[] getListOfFiles(String ResourcePath) {
+		File[] directoryNames = new File(ResourcePath).listFiles(File::isFile);
+		return directoryNames;
+	}
+	
+	public static void prepareFolderFileMaqpper(String key, String value) {
+		Map <String, String> hm = new HashMap<Integer, Point2D>()
+	}
+}

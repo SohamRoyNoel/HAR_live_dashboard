@@ -1,0 +1,31 @@
+package HarController.HarDashboardProject;
+
+import HarController.HarDashboardProject.HarFilesRelocator.HarRelocator;
+
+/**
+ * Har Dashboard entry point
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        HarRelocator.HarRelocators();
+    }
+    
+    public static ArrayList<String> listtheColumnnames() throws Exception {
+		String query = "select * from " + propertiesExternal("excelSheetname");
+		Connection connection = getFilloconnection();
+		Recordset rs = connection.executeQuery(query);
+		ArrayList<String> elements = rs.getFieldNames();
+		Properties properties = new Properties();
+		for (int i = 0; i < elements.size(); i++) {
+			String key = "key" + i;
+			properties.setProperty(key, elements.get(i));
+		}
+		FileOutputStream fileOutputStream = new FileOutputStream(fl);
+		properties.store(fileOutputStream, "Columns from the excel sheet");
+		fileOutputStream.close();
+		return elements;
+	}
+}

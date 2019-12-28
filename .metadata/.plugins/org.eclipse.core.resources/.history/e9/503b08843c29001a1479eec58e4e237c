@@ -1,0 +1,20 @@
+package HarController.HarDashboardProject.HarFilesRelocator;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+import HarController.HarDashboardProject.Resources.ResourcePaths;
+
+public class HarRelocator {
+
+	public static void HarRelocators() {
+		
+		String srcDir = ResourcePaths.srcDir;
+		String destDir = ResourcePaths.destDir;
+		File srcFile = new File(srcDir);
+		
+		FileUtils.copyDirectoryToDirectory(srcDir, destDir);
+	}
+	
+}

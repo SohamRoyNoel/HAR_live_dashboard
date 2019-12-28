@@ -1,0 +1,13 @@
+package HarController.HarDashboardProject;
+
+/**
+ * Har Dashboard entry point
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        
+    }
+}

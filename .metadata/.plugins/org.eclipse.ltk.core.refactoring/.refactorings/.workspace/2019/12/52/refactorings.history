@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;HarDashboardProject/src/main/java/HarController/HarDashboardProject/ObjectRepository/FolderFileMapper.properties&apos;" deleteContents="false" description="Delete resource &apos;HarDashboardProject/src/main/java/HarController/HarDashboardProject/ObjectRepository/FolderFileMapper.properties&apos;" element1="/HarDashboardProject/src/main/java/HarController/HarDashboardProject/ObjectRepository/FolderFileMapper.properties" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1577518203907"/>
+</session>

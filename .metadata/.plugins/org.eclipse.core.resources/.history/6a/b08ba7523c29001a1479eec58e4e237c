@@ -1,0 +1,7 @@
+package HarController.HarDashboardProject.Resources;
+
+public class ResourcePaths {
+
+	public static String srcDir = "E:\\HAR_Project\\HarOperationExecution\\Source";
+	
+}

@@ -1,0 +1,9 @@
+package HarController.HarDashboardProject.HarFilesRelocator;
+
+public class HarRelocator {
+
+	public static class HarRelocators() {
+		
+	}
+	
+}
